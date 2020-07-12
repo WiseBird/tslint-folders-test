@@ -1,0 +1,31 @@
+{
+  "rulesDirectory": [
+    "node_modules/tslint-folders/dist/lib/"
+  ],
+  "rules": {
+    "tsf-folders-imports-between-packages": [
+      true,
+      {
+        "config": {
+          "checkImportsBetweenPackages": {
+            "enabled": true,
+            "checkSubFoldersEnabled": true,
+            "ignorePaths": [],
+            "packages": [
+              {
+                "importPath": "interfaces",
+                "allowedToImport": [],
+                "subFolders": []
+              },
+              {
+                "importPath": "dto",
+                "allowedToImport": ["interfaces"],
+                "subFolders": []
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
