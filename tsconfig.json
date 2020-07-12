@@ -22,6 +22,12 @@
         "name": "typescript-tslint-plugin"
       }
     ],
+    "baseUrl": ".",
+    "paths": {
+      "test/dal/*": [
+        "./src/dal/*"
+      ]
+    },
 
     "incremental": true
   },
